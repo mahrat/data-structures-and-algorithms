@@ -1,1 +1,5 @@
-# data-structures-and-algorithms
+#### Data Structures And Algorithms
+
+> To Run \
+> javac Main.java \
+> java Main
