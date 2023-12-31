@@ -43,4 +43,44 @@ public class ArrayDSA {
         return secondLargest;
     }
 
+    public boolean checkIfArraySorted(){
+        for(int i = 1;i < size ; i++){
+            if(arr[i] < arr[i-1]){
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public void printArray(){
+        for(int i = 0;i < size;i++){
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println();
+    }
+
+    public void reverseAnArray(){
+        int i = 0, j = size-1;
+        while(i<j){
+            int temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;
+            i++;j--;
+        }
+    }
+
+    public void removeDuplicatesFromArray(){
+        if(size > 1) {
+            int i = 0;
+            for(int j = 1;j<size;j++){
+                if(arr[j] != arr[i]){
+                    i = i+1;
+                    arr[i] = arr[j];
+                }
+            }
+        }
+    }
+
+
+
 }
